@@ -17,11 +17,12 @@
         <p>
             {{ .Content }}
         </p>
+    </div>
+    <div class="comments">
         {{ if .Site.Params.CustomPostFooterHTML }}
-        {{ .Site.Params.CustomPostFooterHTML | safeHTML }}
+            {{ .Site.Params.CustomPostFooterHTML | safeHTML }}
         {{ end }}
     </div>
-
     <div class="prev-next">
         {{ if eq .Site.Params.TogglePreviousAndNextButtons "true" }}
             {{ if or .PrevInSection .NextInSection }}
