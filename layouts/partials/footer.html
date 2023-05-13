@@ -3,11 +3,6 @@
     {{ if .Site.Params.CustomFooterHTML }}
     {{ .Site.Params.CustomFooterHTML | safeHTML }}
     {{ end }}
-    <p class="disclaimer">
-        All opinions expressed are my own and do not represent the views or opinions of any organization I work for or with.
-        Any code is provided for example purposes only and no warranties are expressed or implied.
-        Please wear safety googles or other protective equipment prior to deploying to production.   
-    </p>
     <span>&copy; {{ now.Year }} {{ .Site.Params.Footer}}</span>
 
 </footer>
